@@ -1,0 +1,31 @@
+{
+  "name": "harnessed-develop-agent",
+  "version": "1.0.0",
+  "description": "A harness system for long-running applications with Planner, Generator, and Evaluator agents",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "example": "tsx examples/example.ts"
+  },
+  "keywords": [
+    "agents",
+    "claude",
+    "harness",
+    "workflow"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.1.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/uuid": "^9.0.7",
+    "tsx": "^4.21.0",
+    "typescript": "^5.3.3"
+  }
+}
